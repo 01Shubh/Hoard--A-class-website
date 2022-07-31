@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HOARD | Communities</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+           .footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: left;
+}
+
+
+
+
+.footer-dark .item.social > a {
+  font-size: 200px;
+  width: 106px;
+  height: 156px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+  margin: 0 100px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+        
+
+/* Slideshow container */
+.slideshow-container ,.news{
+  max-width: 500px;
+  position: relative;
+  top: -100px;
+  left: 100px;
+  margin: auto;
+}
+/* Caption text */
+.text  {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+        header h1{font-family:Tapestry;}
+        nav a:hover, footer a:hover{
+            color: royalblue;
+        }
+       
+        .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    background-image: url(community_2.0bg.PNG), url(3.0bg.PNG), url(sidebg.PNG);
+  background-position: top center, right bottom, left center;
+  background-repeat: no-repeat, no-repeat;
+  padding: 15px;
+    
+}
+body
+{
+  margin-left: auto;
+  margin-right: auto;
+   padding:0;
+   font-family:sans-serif;
+   
+
+  
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+    </style>
+</head>
+<body>
+    <header><h1>HOARD</h1></header>
+    <nav>
+        <a target="_self" href="hoard2.0.html">Home</a>
+        <a target="_self" href="schedule.html">Schedule</a>
+        <a target="_self"href="activities2.html">Activities</a>
+        <a target="_self" href="#">Enquiries</a>
+        <a target="_self" href="#contact">Contact Us</a>
+ </nav>
+ <div id="mySidenav" class="sidenav">
+    <a target="_self" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a target="_self" href="hoard2.0.html">Academics</a>
+    <a target="_self" href="scholarship.html">Study Materials</a>
+    <a target="_self" href="#">Student Corner</a>
+    <a target="_self" href="scholarship.html">Scholarships</a>
+    <a target="_self" href="communities2.html">Communities</a>
+    <a target="_self" href="results.html">Results</a>
+        
+  </div>
+  
+  
+  
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+  
+   
+  <main>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+    <h1 style="font-size: 70px;"><u>Communities Section</u></h1>
+
+    <div class="container">
+        <img src="april-17-2019-galaxy-cluster-abell-2261.jpg" alt="This is an Image" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text" style="font-size: 40px;"><u>An Insane Universe</u></div>
+          <p style="font-family: cursive;">"We are the part of this universe,we are in this universe, but perhaps more important than both of this facts, is that the universe is in us."</p>
+          <p style="font-family: cursive;">~ Neil deGrasse Tyson</p>
+          <p style="font-size: 25px;">Manifest the hidden concepts of universe with us. </p>
+          <a href="#" style="font-size: 20px;">Click Here To Join</a>
+        </div>
+      </div>
+        
+      <div class="container">
+       <img src="booksbg.jpg" alt="Avatar" class="image" style="width:100%">
+       <div class="middle">
+         <div class="text" style="color: black; font-size: 40px;"><u>The Chronicles</u></div>
+         <p style="font-family: cursive;">"Read what you love until you love to read."</p>
+         <p style="font-family: cursive;">~ Naval Ravikant</p>
+         <br>
+         <p style="font-size: 25px;">Our community is for readers and book recommendations with a mission to help students find and share books they love.</p>
+         <p style="font-size: 25px;">Learn,discover and take your imagination to an another level.</p>
+         <a href="#" style="font-size: 20px;">Click Here To Join</a>
+       </div>
+     </div>
+    
+     <div class="container">
+       <img src="computerbg.jpg" alt="Avatar" class="image" style="width:100%">
+       <div class="middle">
+         <div class="text" style="color: black; font-size: 40px;"><u> Ada Lovelace Followers</u></div>
+         <p style="font-family: cursive;">"Talk is cheap, show me the code."</p>
+         <p style="font-family: cursive;">~ Linus Torvalds</p>
+         <p style="font-size: 25px;">Logic building with learning a great experience.Join our community to learn, implement and have fun with coding.Explore the latest programming languages and skill to unlock your potential </p>
+         <a href="#" style="font-size: 20px;">Click Here To Join</a>
+        </div>
+
+     </div>
+
+     <div class="container">
+      <img src="gamebg.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text" style="color: black; font-size: 40px;"><u>Colludium</u></div>
+        <p style="font-family: cursive;">"Reality is broken. Game designers can fix it."</p>
+        <p style="font-family: cursive;">~ Jane McGonigal</p>
+        <p style="font-size:25px">Games the happy part of our life join us to enjoy more.Enjoy, design and create new games.Bring your imagination in day to day life .</p>
+        <a href="#" style="font-size: 20px;">Click Here To Join</a> 
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="actbg.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text" style="color: black; font-size: 40px; "><u>An Act</u></div>
+        <p style="font-family: cursive;">“Life is a play that does not allow testing. So, sing, cry, dance, laugh and live intensely, before the curtain closes and the piece ends with no applause.”</p>
+        <p style="font-family: cursive;">~ Charlie Chaplin</p>
+        <p style="font-size: 25px;">Theatre gives you an oppurtunity to know multifarious characrters.Find which characters you'll love to perform.</p>
+        <a href="#" style="font-size: 20px;">Click Here To Join</a>
+      </div>    
+    </div>
+
+    <div class="container">
+      <img src="musicbg.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text" style="color: black; font-size: 40px;""><u>MUSICOLOGY</u></div>
+        <p style="font-family: cursive;">Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.</p>
+        <p style="font-family: cursive;">~ Plato</p>
+        <p style="font-size: 25px;">Our community help students to gain knowledge of music.We also teach students to play musical instruments as it brings joy and creativity.</p>
+        <a href="#" style="font-size: 20px;">Click Here To Join</a>
+
+      </div>
+    </div>
+
+  </main>
+
+ <footer>
+    <a target="_self" href="#">FAQs</a>
+    <a target="_self" href="#">About Us</a>
+    <a target="_self" href="#">&copy;copyright</a>
+    <a target="_self" href="#">Rate us</a>
+    <a target="_self" href="#">Feedback</a>
+    <a id="contact"></a>
+    <div class="col item social" style="text-align: left ; margin-left: auto;">
+      <a style="font-size: 15px; text-align: left;"  onMouseOver="this.style.color='#4267B2'"
+      onMouseOut="this.style.color='white'" href="#"><i class="fa fa-facebook">         </i>          Facebook</a>
+      <a style="text-align: left;font-size: 15px; " onMouseOver="this.style.color='#00acee'"
+      onMouseOut="this.style.color='white'" href="#"><i class="fa fa-twitter"></i>   Twitter</a>
+      <a  style="text-align: left;font-size: 15px;"  onMouseOver="this.style.color='#FF0000'"
+      onMouseOut="this.style.color='white'" href="#"><i class="fa fa-youtube"></i>    YouTube</a>
+      <a  style="text-align: left;font-size: 15px;"  onMouseOver="this.style.color='hotpink'"
+      onMouseOut="this.style.color='white'" href="#"><i class="fa fa-instagram"></i>     Instagram</a>
+      <a style="text-align: left;font-size: 15px; "  onMouseOver="this.style.color='blue'"
+      onMouseOut="this.style.color='white'" href="#"><i class="fa fa-google"></i>    Google</a>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>
